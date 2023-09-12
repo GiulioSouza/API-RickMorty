@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #DAFDBA;
+}
+
+.main-container{
+    background-color: #DAFDBA;
+    width: 1400px;
+    margin-left: 50px;
+}
+
+/* PESQUISA */
+#pesquisa{
+    margin: 25px auto;
+    padding-top: 25px;
+    height: 200px;
+    width: 1000px;
+    background-color: #45C4B0;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#pesquisa h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#pesquisa #inputs{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#inputs input{
+    border: 1px solid;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#pesquisa button{
+    height: 40px;
+    width: 80px;
+    background-color: #a8ff57;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 1.3rem;
+}
+
+#pesquisa button:hover{
+    background-color: #9AEBA3;
+}
+
+/* PERSONAGENS*/
+#personagens{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DAFDBA;
+}
+
+.card{
+    width: 308px;
+    padding: 5px;
+    margin: 8px;
+    border: 1px solid #012030;
+    border-radius: 5px;
+    background-color: #45C4B0;
+}
+
+.card img{
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 2px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.card h2{
+    padding-left: 10px;
+}
