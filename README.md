@@ -29,3 +29,8 @@ O back-end do projeto foi construído usando Express.js. Ele utilizado na estrut
 4. Inicie o servidor com `npm run dev`.
 5. Abra seu navegador e visite `http://localhost:3000`.
 ```
+---
+
+#Dependências necessárias
+
+- Node
