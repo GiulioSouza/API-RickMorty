@@ -9,10 +9,11 @@ const recebePersonagem = async (req, res) => {
     try{
         const url = `https://rickandmortyapi.com/api/character/?name=${nome}`
         const response = await axios.get(url)
+
         return res.json(response.data.results)
     }catch(e){
         console.log(e)
-        return
+        return res.status(404).json({"mensagem": "Personagem não encontrado"})
     }
 }
 
