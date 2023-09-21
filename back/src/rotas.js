@@ -2,6 +2,6 @@ const express = require('express');
 const rotas = express()
 const controladores = require('./controladores/controladores')
 
-rotas.get('/pesquisa_por_nome', controladores.pesquisaPorNome)
+rotas.get('/pesquisa_personagem/:nome', controladores.recebePersonagem)
 
 module.exports = rotas

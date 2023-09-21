@@ -17,10 +17,10 @@ botaoEnviar.addEventListener('click', (e) => {
 //funções
 const buscaPersonagem = async (nome) => {
     try{
-        const url = `https://rickandmortyapi.com/api/character/?name=${nome}`
+        const url = `http://localhost:3000/pesquisa_personagem/${nome}`
         const response = await axios.get(url)
 
-        criaPersonagem(response)
+        criaPersonagem(response.data)
         return
     }catch(e){
         console.log(e)
@@ -29,7 +29,7 @@ const buscaPersonagem = async (nome) => {
 }
 
 const criaPersonagem = (response) => {
-    const personagens =  response.data.results
+    const personagens =  response
 
     personagens.forEach(personagem => {
         let divCard = document.createElement("div")
