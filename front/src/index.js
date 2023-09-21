@@ -14,6 +14,7 @@ botaoEnviar.addEventListener('click', (e) => {
     buscaPersonagem(nomePersonagem)
 })
 
+
 //funções
 const buscaPersonagem = async (nome) => {
     try{
@@ -30,6 +31,7 @@ const buscaPersonagem = async (nome) => {
 
 const criaPersonagem = (response) => {
     const personagens =  response
+    divPersonagens.innerHTML = ''
 
     personagens.forEach(personagem => {
         let divCard = document.createElement("div")
